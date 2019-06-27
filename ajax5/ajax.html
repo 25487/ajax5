@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr" style="font-size: 39px; text-align: center; background-color: #ffaa63; font-family: arial;">
+<head>
+  <meta charset="utf-8">
+  <title>AJAX 5</title>
+  <meta name="author" content="Taurese Usman MD1A">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <header>
+      <h2>Ajax 5</h2>
+    </header>
+    <body>
+
+       <p><img src="http://ma-web.nl/static/vector/Logo_blok.svg" width="39px;">Ajax 5 &copy; Taurese Usman MD1A</p>
+       <input type="text" id="searchCountry" placeholder="Zoek een land" style="font-size: 39px;">
+       <br>
+       <div id="txtHint">Hier staat de lijst</div>
+       <script>
+         searchCountry = document.getElementById('searchCountry');
+         searchCountry.addEventListener('keyup', function(){
+           showList(searchCountry.value,'list');
+         });
+       </script>
+       <script src="ajax.js"></script>
+     </body>
+   </html>
